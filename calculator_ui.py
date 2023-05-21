@@ -7,6 +7,8 @@
 
 # Import necessary libraries or modules 
 import tkinter as tk   # import tkinter for GUI
+from tkinter import *
+from tkinter import messagebox  # import messagebox for the error message
 
 # Define a Calculator UI class with its properties and methods
 class CalculatorUI:

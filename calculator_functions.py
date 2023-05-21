@@ -12,5 +12,9 @@ class CalculatorFunctions:
     @staticmethod
     def subtraction(num1, num2):
         return num1 - num2
+    
+    @staticmethod
+    def multiplication(num1, num2):
+        return num1 * num2
 
 # execute Calculator Functions class methods

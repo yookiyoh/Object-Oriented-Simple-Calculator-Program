@@ -75,5 +75,6 @@ class CalculatorUI:
         # Create button for program exit 
         self.button_exit = tk.Button(self.window, text = "Exit", command = exit_program)
         self.button_exit.grid(row = 6, column = 2)
-
-# Execute Calculator UI class methods
+        
+        # Execute Calculator UI class methods
+        

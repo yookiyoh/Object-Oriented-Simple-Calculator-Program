@@ -8,5 +8,9 @@ class CalculatorFunctions:
     @staticmethod
     def addition(num1, num2):
         return num1 + num2
+    
+    @staticmethod
+    def subtraction(num1, num2):
+        return num1 - num2
 
 # execute Calculator Functions class methods

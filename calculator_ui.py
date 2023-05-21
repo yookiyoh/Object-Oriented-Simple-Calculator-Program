@@ -14,5 +14,7 @@ class CalculatorUI:
         self.window.title("Simple Calculator")
         self.window.config(bg="#007FFF")
 
-# Execute Calculator UI class methods
 # Create GUI elements and configure their properties
+
+
+# Execute Calculator UI class methods

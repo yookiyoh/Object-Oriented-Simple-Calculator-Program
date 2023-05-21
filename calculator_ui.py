@@ -41,10 +41,12 @@ class CalculatorUI:
         self.labelr.grid(row = 2, column = 0)
 
         # Display result output
-        self.labelr_entry = tk.Entry(self.window, state = "readonly")
-        self.labelr_entry.grid(row = 2, column = 1)
+        self.labeld = tk.Entry(self.window, state = "readonly")
+        self.labeld.grid(row = 2, column = 1)
 
-        #
+        # Create button for addition operation
+        self.button_add = tk.Button(self.window, text = "Add", command = self.addition_num)
+        self.button_add.grid(row = 3, column = 0)
 
 
 # Execute Calculator UI class methods

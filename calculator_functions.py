@@ -4,7 +4,6 @@
 # Remodified Object-Oriented Simple Calculator
 
 
-
 # Define a Calculator Functions class with its properties and methods
 class CalculatorFunctions:
     # Execute Calculator Functions class methods

@@ -4,7 +4,6 @@
 # Remodified Object-Oriented Simple Calculator
 
 
-
 # Import Calculator Functions
 from calculator_functions import CalculatorFunctions
 

@@ -16,5 +16,12 @@ class CalculatorFunctions:
     @staticmethod
     def multiplication(num1, num2):
         return num1 * num2
+    
+    @staticmethod
+    def division(num1, num2):
+        if num2 != 0:
+            return num1 / num2
+        else:
+            raise ZeroDivisionError("Error: Cannot divide by zero")
 
 # execute Calculator Functions class methods

@@ -5,5 +5,8 @@
 
 # define a Calculator Functions class with its properties and methods
 class CalculatorFunctions:
+    @staticmethod
+    def addition(num1, num2):
+        return num1 + num2
 
 # execute Calculator Functions class methods

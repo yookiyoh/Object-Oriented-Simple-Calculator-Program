@@ -48,5 +48,9 @@ class CalculatorUI:
         self.button_add = tk.Button(self.window, text = "Add", command = self.addition_num)
         self.button_add.grid(row = 3, column = 0)
 
+        # Create button for subtraction operation
+        self.button_sub = tk.Button(self.window, text = "Subtract", command = self.subtraction_num)
+        self.button_sub.grid(row = 3, column = 1)
+
 
 # Execute Calculator UI class methods

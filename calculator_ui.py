@@ -24,4 +24,8 @@ class CalculatorUI:
         self.label1 = tk.Label(self.window, text = "First Number: ")
         self.label1.grid(row = 0, column = 0)
 
+        # Create textbox for first number input
+        self.num1 = tk.Entry(self.window)
+        self.num1.grid(row = 0, column = 1)
+
 # Execute Calculator UI class methods

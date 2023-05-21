@@ -68,4 +68,8 @@ class CalculatorUI:
         self.button_reiterate = tk.Button(self.window, text = "Try Again", command = reiterate_program)
         self.button_reiterate.grid(row = 5, column = 1)
 
+        # create button for motivation
+        self.button_motivation = tk.Button(self.window, text = "?", command = motivate_message)
+        self.button_motivation.grid(row = 6, column = 1)
+
 # Execute Calculator UI class methods

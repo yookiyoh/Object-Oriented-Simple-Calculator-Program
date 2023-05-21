@@ -5,6 +5,9 @@
 
 # Pseudocode
 
+# Import Calculator Functions
+from calculator_functions import CalculatorFunctions
+
 # Import necessary libraries or modules 
 import tkinter as tk   # import tkinter for GUI
 from tkinter import *
@@ -61,26 +64,25 @@ class CalculatorUI:
         self.button_div.grid(row = 4, column = 1)
 
         # Create button for clear content
-        self.button_clear = tk.Button(self.window, text = "Clear", command = clear_input)
+        self.button_clear = tk.Button(self.window, text = "Clear", command = self.clear_input)
         self.button_clear.grid(row = 5, column = 0)
 
         # Create button for reiteration
-        self.button_reiterate = tk.Button(self.window, text = "Try Again", command = reiterate_program)
+        self.button_reiterate = tk.Button(self.window, text = "Try Again", command = self.reiterate_program)
         self.button_reiterate.grid(row = 5, column = 1)
 
         # Create button for motivation
-        self.button_motivation = tk.Button(self.window, text = "?", command = motivate_message)
+        self.button_motivation = tk.Button(self.window, text = "?", command = self.motivate_message)
         self.button_motivation.grid(row = 6, column = 1)
 
         # Create button for program exit 
-        self.button_exit = tk.Button(self.window, text = "Exit", command = exit_program)
+        self.button_exit = tk.Button(self.window, text = "Exit", command = self.exit_program)
         self.button_exit.grid(row = 6, column = 2)
         
         # Execute Calculator UI class methods
-        # define function for arithmetic addition
         def addition_num(self):
            # Get user input from entry fields
            num1 = float(self.num1_entry.get())
            num2 = float(self.num2_entry.get())
 
-           # 
+           # Call the addition function from 

@@ -16,9 +16,12 @@ class CalculatorUI:
     # Constructor that initializes the Calculator UI class
     def __init__(self):
         self.window = tk.Tk()
-        self.window.title("Simple Calculator")
-        self.window.config(bg="#007FFF")
+        self.window.title("Simple Calculator")   # Set title for the window
+        self.window.config(bg = "#007FFF")
 
         # Create GUI elements and configure their properties
+        # Create label for first number
+        self.label1 = tk.Label(self.window, text = "First Number: ")
+        self.label1.grid(row = 0, column = 0)
 
 # Execute Calculator UI class methods

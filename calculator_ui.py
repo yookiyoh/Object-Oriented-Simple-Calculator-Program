@@ -24,60 +24,60 @@ class CalculatorUI:
 
         # Create GUI elements and configure their properties
         # Create label for first number
-        self.label1 = tk.Label(self.window, text = "First Number: ")
-        self.label1.grid(row = 0, column = 0)
+        self.label1 = tk.Label(self.window, text = "First Number: ", font = ("Arial", 15, "bold"), bg = "#536878", fg = "#007FFF")
+        self.label1.grid(row = 0, column = 0, padx = 10, pady = 10)
 
         # Create textbox for first number input
-        self.num1_entry = tk.Entry(self.window)
+        self.num1_entry = tk.Entry(self.window, font = ("Gotham Black", 14), fg = "#F9E076", justify = CENTER)
         self.num1_entry.grid(row = 0, column = 1)
 
         # Create label for second number
-        self.label2 = tk.Label(self.window, text = "Second Number: ")
-        self.label2.grid(row = 1, column = 0)
+        self.label2 = tk.Label(self.window, text = "Second Number: ", font = ("Arial", 15, "bold"), bg = "#536878", fg = "#007FFF")
+        self.label2.grid(row = 1, column = 0, padx = 10)
 
         # Create textbox for second number input
-        self.num2_entry = tk.Entry(self.window)
+        self.num2_entry = tk.Entry(self.window, font = ("Gotham Black", 14), fg = "#F9E076", justify = CENTER)
         self.num2_entry.grid(row = 1, column = 1)
 
         # Create label for Result
-        self.labelr = tk.Label(self.window, text = "Result: ")
+        self.labelr = tk.Label(self.window, text = "Result: ", font = ("Stylus", 15, "bold"), bg = "#536878", fg = "#007FFF")
         self.labelr.grid(row = 2, column = 0)
 
         # Display result output
-        self.labeld = tk.Label(self.window, text = "")
+        self.labeld = tk.Label(self.window, text = "", font = ("Tahoma", 15, "bold"), bg = "#536878", fg = "#007FFF", justify = CENTER)
         self.labeld.grid(row = 2, column = 1)
 
         # Create button for addition operation
-        self.button_add = tk.Button(self.window, text = "Add", command = self.addition_num)
-        self.button_add.grid(row = 3, column = 0)
+        self.button_add = tk.Button(self.window, text = "Add", width = 11, font = ("Futura", 14, "bold"), bg = "#BDA55D", command = self.addition_num)
+        self.button_add.grid(row = 3, column = 0, padx = 5, pady = 5)
 
         # Create button for subtraction operation
-        self.button_sub = tk.Button(self.window, text = "Subtract", command = self.subtraction_num)
-        self.button_sub.grid(row = 3, column = 1)
+        self.button_sub = tk.Button(self.window, text = "Subtract", width = 11, font = ("Futura", 14, "bold"), bg = "#BDA55D", command = self.subtraction_num)
+        self.button_sub.grid(row = 3, column = 1, padx = 5, pady = 5)
 
         # Create button for multiplication operation
-        self.button_mul = tk.Button(self.window, text = "Multiply", command = self.multiplication_num)
-        self.button_mul.grid(row = 4, column = 0)
+        self.button_mul = tk.Button(self.window, text = "Multiply", width = 11, font = ("Futura", 14, "bold"), bg = "#BDA55D", command = self.multiplication_num)
+        self.button_mul.grid(row = 4, column = 0, padx = 5, pady = 5)
 
         # Create button for division operation
-        self.button_div = tk.Button(self.window, text = "Divide", command = self.division_num)
-        self.button_div.grid(row = 4, column = 1)
+        self.button_div = tk.Button(self.window, text = "Divide", width = 11, font = ("Futura", 14, "bold"), bg = "#BDA55D", command = self.division_num)
+        self.button_div.grid(row = 4, column = 1, padx = 5, pady = 5)
 
         # Create button for clear content
-        self.button_clear = tk.Button(self.window, text = "Clear", command = self.clear_input)
-        self.button_clear.grid(row = 5, column = 0)
+        self.button_clear = tk.Button(self.window, text = "Clear", width = 11, font = ("Helvetica", 12, "bold"), bg = "#FBEC5D", command = self.clear_input)
+        self.button_clear.grid(row = 5, column = 0, padx = 5, pady = 15)
 
         # Create button for reiteration
-        self.button_reiterate = tk.Button(self.window, text = "Try Again", command = self.reiterate_program)
-        self.button_reiterate.grid(row = 5, column = 1)
+        self.button_reiterate = tk.Button(self.window, text = "Try Again", width = 11, font = ("Helvetica", 12, "bold"), bg = "#ED7117", command = self.reiterate_program)
+        self.button_reiterate.grid(row = 5, column = 1, padx = 5, pady = 15)
 
         # Create button for motivation
-        self.button_motivation = tk.Button(self.window, text = "?", command = self.motivate_message)
-        self.button_motivation.grid(row = 6, column = 1)
+        self.button_motivation = tk.Button(self.window, text = "?", width = 11, font = ("Helvetica", 12, "bold"), bg = "#5DBB63", command = self.motivate_message)
+        self.button_motivation.grid(row = 6, column = 1, padx = 5, pady = 15)
 
         # Create button for program exit 
-        self.button_exit = tk.Button(self.window, text = "Exit", command = self.exit_program)
-        self.button_exit.grid(row = 6, column = 2)
+        self.button_exit = tk.Button(self.window, text = "Exit", width = 11, font = ("Helvetica", 12, "bold"), bg = "#E3242B", command = self.exit_program)
+        self.button_exit.grid(row = 6, column = 2, padx = 5, pady = 15)
         
     # Execute Calculator UI class methods
     def addition_num(self):

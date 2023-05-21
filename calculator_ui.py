@@ -87,3 +87,9 @@ class CalculatorUI:
 
            # Call the addition function from calculator_functions module
            result = CalculatorFunctions.addition(num1, num2)
+
+           # Update the result entry field
+           self.labeld.config(state = "normal")
+           self.labeld.delete(0, tk.END)
+           self.labeld.insert(0, result)
+           self.labeld.config(state = "readonly")

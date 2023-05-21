@@ -121,3 +121,17 @@ class CalculatorUI:
            self.labeld.delete(0, tk.END)
            self.labeld.insert(0, result)
            self.labeld.config(state = "readonly")
+        
+        def division_num(self):
+           # Get user input from entry fields
+           num1 = float(self.num1_entry.get())
+           num2 = float(self.num2_entry.get())
+
+           # Call the division function from calculator_functions module
+           result = CalculatorFunctions.division(num1, num2)
+
+           # Update the result entry field
+           self.labeld.config(state = "normal")
+           self.labeld.delete(0, tk.END)
+           self.labeld.insert(0, result)
+           self.labeld.config(state = "readonly")

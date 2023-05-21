@@ -56,5 +56,8 @@ class CalculatorUI:
         self.button_mul = tk.Button(self.window, text = "Multiply", command = self.multiplication_num)
         self.button_mul.grid(row = 4, column = 0)
 
+        # Create button for division operation
+        self.button_div = tk.Button(self.window, text = "Divide", command = self.division_num)
+        self.button_div.grid(row = 4, column = 1)
 
 # Execute Calculator UI class methods

@@ -28,4 +28,8 @@ class CalculatorUI:
         self.num1 = tk.Entry(self.window)
         self.num1.grid(row = 0, column = 1)
 
+        # Create label for second number
+        self.label2 = tk.Label(self.window, text = "Second Number: ")
+        self.label2.grid(row = 1, column = 0)
+
 # Execute Calculator UI class methods

@@ -36,4 +36,8 @@ class CalculatorUI:
         self.num2 = tk.Entry(self.window)
         self.num2.grid(row = 1, column = 1)
 
+        # Create label for Result
+        self.labelr = tk.Label(self.window, text = "Result: ")
+        self.labelr.grid(row = 2, column = 0)
+
 # Execute Calculator UI class methods

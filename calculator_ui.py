@@ -77,7 +77,7 @@ class CalculatorUI:
 
         # Create button for program exit 
         self.button_exit = tk.Button(self.window, text = "Exit", width = 11, font = ("Helvetica", 12, "bold"), bg = "#E3242B", command = self.exit_program)
-        self.button_exit.grid(row = 6, column = 2, padx = 5, pady = 15)
+        self.button_exit.grid(row = 5, column = 3, padx = 5, pady = 15)
         
     # Execute Calculator UI class methods
     def addition_num(self):

@@ -135,3 +135,6 @@ class CalculatorUI:
            self.labeld.delete(0, tk.END)
            self.labeld.insert(0, result)
            self.labeld.config(state = "readonly")
+        
+        def run(self):
+           self.window.mainloop()

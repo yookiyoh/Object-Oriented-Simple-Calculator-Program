@@ -25,16 +25,16 @@ class CalculatorUI:
         self.label1.grid(row = 0, column = 0)
 
         # Create textbox for first number input
-        self.num1 = tk.Entry(self.window)
-        self.num1.grid(row = 0, column = 1)
+        self.num1_entry = tk.Entry(self.window)
+        self.num1_entry.grid(row = 0, column = 1)
 
         # Create label for second number
         self.label2 = tk.Label(self.window, text = "Second Number: ")
         self.label2.grid(row = 1, column = 0)
 
         # Create textbox for second number input
-        self.num2 = tk.Entry(self.window)
-        self.num2.grid(row = 1, column = 1)
+        self.num2_entry = tk.Entry(self.window)
+        self.num2_entry.grid(row = 1, column = 1)
 
         # Create label for Result
         self.labelr = tk.Label(self.window, text = "Result: ")
@@ -77,4 +77,8 @@ class CalculatorUI:
         self.button_exit.grid(row = 6, column = 2)
         
         # Execute Calculator UI class methods
-        
+        # define function for arithmetic addition
+        def addition_num(self):
+           # Get user input from entry fields
+           num1 = float(self.num1_entry.get())
+           num2 = float(self.num2_entry.get())

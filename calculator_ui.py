@@ -5,10 +5,11 @@
 
 # Pseudocode
 
-# define a Calculator UI class with its properties and methods
+# Define a Calculator UI class with its properties and methods
 class CalculatorUI:
+    # Enable Calculator UI class constructor/s
+    # Constructor that initializes the Calculator UI class
     def __init__(self):
 
-# enable Calculator UI class constructor/s
-# execute Calculator UI class methods
-# create GUI elements and configure their properties
+# Execute Calculator UI class methods
+# Create GUI elements and configure their properties

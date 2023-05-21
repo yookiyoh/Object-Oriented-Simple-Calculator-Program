@@ -40,4 +40,11 @@ class CalculatorUI:
         self.labelr = tk.Label(self.window, text = "Result: ")
         self.labelr.grid(row = 2, column = 0)
 
+        # Display result output
+        self.labelr_entry = tk.Entry(self.window, state = "readonly")
+        self.labelr_entry.grid(row = 2, column = 1)
+
+        #
+
+
 # Execute Calculator UI class methods

@@ -3,7 +3,7 @@
 # Object-Oriented Programming | Assignment 7
 # Remodified Object-Oriented Simple Calculator
 
-# Pseudocode
+
 
 # Import Calculator Functions
 from calculator_functions import CalculatorFunctions
@@ -88,7 +88,6 @@ class CalculatorUI:
             self.labeld.config(text = result)
         except ValueError:
             messagebox.showerror('Error detected', 'Error: Invalid input. Please enter a valid input')
-
         
     def subtraction_num(self):
         try:
@@ -119,22 +118,22 @@ class CalculatorUI:
         except ValueError:
             messagebox.showerror('Error detected', 'Error: Invalid input. Please enter a valid input')
 
-    # define function for clear input
+    # Define function for clear input
     def clear_input(self):
         self.num1_entry.delete(0, tk.END)
         self.num2_entry.delete(0, tk.END)
 
-    # define function for reiteration
+    # Define function for reiteration
     def reiterate_program(self):
         self.num1_entry.delete(0, tk.END)
         self.num2_entry.delete(0, tk.END)
         messagebox.showinfo('Retry', 'Please input new values for arithmetic calculations')
 
-    # define function for motivation
+    # Define function for motivation
     def motivate_message(self):
         messagebox.showinfo('?', 'You are worthy. I hope you know that :3\nKeep moving forward!')
 
-    # define function for program exit
+    # Define function for program exit
     def exit_program(self):
         self.window.destroy()
         messagebox.showinfo('Message', 'Thank you for using this program!')

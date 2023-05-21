@@ -9,3 +9,5 @@
 # enable Calculator UI class constructor/s
 # execute Calculator UI class methods
 # create GUI elements and configure their properties
+
+class CalculatorUI:

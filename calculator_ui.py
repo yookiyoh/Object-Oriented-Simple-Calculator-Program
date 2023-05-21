@@ -64,12 +64,16 @@ class CalculatorUI:
         self.button_clear = tk.Button(self.window, text = "Clear", command = clear_input)
         self.button_clear.grid(row = 5, column = 0)
 
-        # create button for reiteration
+        # Create button for reiteration
         self.button_reiterate = tk.Button(self.window, text = "Try Again", command = reiterate_program)
         self.button_reiterate.grid(row = 5, column = 1)
 
-        # create button for motivation
+        # Create button for motivation
         self.button_motivation = tk.Button(self.window, text = "?", command = motivate_message)
         self.button_motivation.grid(row = 6, column = 1)
+
+        # Create button for program exit 
+        self.button_exit = tk.Button(self.window, text = "Exit", command = exit_program)
+        self.button_exit.grid(row = 6, column = 2)
 
 # Execute Calculator UI class methods

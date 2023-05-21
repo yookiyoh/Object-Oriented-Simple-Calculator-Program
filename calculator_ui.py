@@ -85,4 +85,5 @@ class CalculatorUI:
            num1 = float(self.num1_entry.get())
            num2 = float(self.num2_entry.get())
 
-           # Call the addition function from 
+           # Call the addition function from calculator_functions module
+           result = CalculatorFunctions.addition(num1, num2)

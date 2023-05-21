@@ -4,3 +4,7 @@
 # Remodified Object-Oriented Simple Calculator
 
 from calculator_ui import CalculatorUI
+
+if __name__ == "__main__":
+    calculator = CalculatorUI
+    calculator.run()

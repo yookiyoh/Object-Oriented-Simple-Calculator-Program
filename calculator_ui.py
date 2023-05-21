@@ -10,6 +10,9 @@ class CalculatorUI:
     # Enable Calculator UI class constructor/s
     # Constructor that initializes the Calculator UI class
     def __init__(self):
+        self.window = tk.Tk()
+        self.window.title("Simple Calculator")
+        self.window.config(bg="#007FFF")
 
 # Execute Calculator UI class methods
 # Create GUI elements and configure their properties

@@ -5,6 +5,9 @@
 
 # Pseudocode
 
+# Import necessary libraries or modules 
+import tkinter as tk   # import tkinter for GUI
+
 # Define a Calculator UI class with its properties and methods
 class CalculatorUI:
     # Enable Calculator UI class constructor/s
@@ -14,7 +17,6 @@ class CalculatorUI:
         self.window.title("Simple Calculator")
         self.window.config(bg="#007FFF")
 
-# Create GUI elements and configure their properties
-
+        # Create GUI elements and configure their properties
 
 # Execute Calculator UI class methods

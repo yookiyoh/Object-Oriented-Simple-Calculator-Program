@@ -82,3 +82,5 @@ class CalculatorUI:
            # Get user input from entry fields
            num1 = float(self.num1_entry.get())
            num2 = float(self.num2_entry.get())
+
+           # 

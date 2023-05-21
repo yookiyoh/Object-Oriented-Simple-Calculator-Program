@@ -60,4 +60,8 @@ class CalculatorUI:
         self.button_div = tk.Button(self.window, text = "Divide", command = self.division_num)
         self.button_div.grid(row = 4, column = 1)
 
+        # Create button for clear content
+        self.button_clear = tk.Button(self.window, text = "Clear", command = clear_input)
+        self.button_clear.grid(row = 5, column = 0)
+
 # Execute Calculator UI class methods

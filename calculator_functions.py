@@ -5,6 +5,7 @@
 
 # define a Calculator Functions class with its properties and methods
 class CalculatorFunctions:
+    # Execute Calculator Functions class methods
     @staticmethod
     def addition(num1, num2):
         return num1 + num2
@@ -23,5 +24,3 @@ class CalculatorFunctions:
             return num1 / num2
         else:
             raise ZeroDivisionError("Error: Cannot divide by zero")
-
-# execute Calculator Functions class methods

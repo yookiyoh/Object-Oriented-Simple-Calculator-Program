@@ -64,4 +64,8 @@ class CalculatorUI:
         self.button_clear = tk.Button(self.window, text = "Clear", command = clear_input)
         self.button_clear.grid(row = 5, column = 0)
 
+        # create button for reiteration
+        self.button_reiterate = tk.Button(self.window, text = "Try Again", command = reiterate_program)
+        self.button_reiterate.grid(row = 5, column = 1)
+
 # Execute Calculator UI class methods

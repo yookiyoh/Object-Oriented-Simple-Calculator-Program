@@ -44,7 +44,7 @@ class CalculatorUI:
         self.labelr.grid(row = 2, column = 0)
 
         # Display result output
-        self.labeld = tk.Entry(self.window, state = "readonly")
+        self.labeld = tk.Label(self.window, text = "")
         self.labeld.grid(row = 2, column = 1)
 
         # Create button for addition operation
@@ -79,62 +79,65 @@ class CalculatorUI:
         self.button_exit = tk.Button(self.window, text = "Exit", command = self.exit_program)
         self.button_exit.grid(row = 6, column = 2)
         
-        # Execute Calculator UI class methods
-        def addition_num(self):
-           # Get user input from entry fields
-           num1 = float(self.num1_entry.get())
-           num2 = float(self.num2_entry.get())
+    # Execute Calculator UI class methods
+    def addition_num(self):
+        try:
+            num1 = float(self.num1_entry.get())
+            num2 = float(self.num2_entry.get())
+            result = CalculatorFunctions.addition(num1, num2)
+            self.labeld.config(text = result)
+        except ValueError:
+            messagebox.showerror('Error detected', 'Error: Invalid input. Please enter a valid input')
 
-           # Call the addition function from calculator_functions module
-           result = CalculatorFunctions.addition(num1, num2)
-
-           # Update the result entry field
-           self.labeld.config(state = "normal")
-           self.labeld.delete(0, tk.END)
-           self.labeld.insert(0, result)
-           self.labeld.config(state = "readonly")
         
-        def subtraction_num(self):
-           # Get user input from entry fields
-           num1 = float(self.num1_entry.get())
-           num2 = float(self.num2_entry.get())
-
-           # Call the subtraction function from calculator_functions module
-           result = CalculatorFunctions.subtraction(num1, num2)
-
-           # Update the result entry field
-           self.labeld.config(state = "normal")
-           self.labeld.delete(0, tk.END)
-           self.labeld.insert(0, result)
-           self.labeld.config(state = "readonly")
+    def subtraction_num(self):
+        try:
+            num1 = float(self.num1_entry.get())
+            num2 = float(self.num2_entry.get())
+            result = CalculatorFunctions.subtraction(num1, num2)
+            self.labeld.config(text = result)
+        except ValueError:
+            messagebox.showerror('Error detected', 'Error: Invalid input. Please enter a valid input')
         
-        def multiplication_num(self):
-           # Get user input from entry fields
-           num1 = float(self.num1_entry.get())
-           num2 = float(self.num2_entry.get())
-
-           # Call the multiplication function from calculator_functions module
-           result = CalculatorFunctions.multiplication(num1, num2)
-
-           # Update the result entry field
-           self.labeld.config(state = "normal")
-           self.labeld.delete(0, tk.END)
-           self.labeld.insert(0, result)
-           self.labeld.config(state = "readonly")
+    def multiplication_num(self):
+        try:
+            num1 = float(self.num1_entry.get())
+            num2 = float(self.num2_entry.get())
+            result = CalculatorFunctions.multiplication(num1, num2)
+            self.labeld.config(text = result)
+        except ValueError:
+            messagebox.showerror('Error detected', 'Error: Invalid input. Please enter a valid input')
         
-        def division_num(self):
-           # Get user input from entry fields
-           num1 = float(self.num1_entry.get())
-           num2 = float(self.num2_entry.get())
+    def division_num(self):
+        try:
+            num1 = float(self.num1_entry.get())
+            num2 = float(self.num2_entry.get())
+            result = CalculatorFunctions.division(num1, num2)
+            self.labeld.config(text = result)
+        except ZeroDivisionError:    # exception for zero division error
+            messagebox.showerror('Error detected', 'Error: Cannot divide by zero')
+        except ValueError:
+            messagebox.showerror('Error detected', 'Error: Invalid input. Please enter a valid input')
 
-           # Call the division function from calculator_functions module
-           result = CalculatorFunctions.division(num1, num2)
+    # define function for clear input
+    def clear_input(self):
+        self.num1_entry.delete(0, tk.END)
+        self.num2_entry.delete(0, tk.END)
 
-           # Update the result entry field
-           self.labeld.config(state = "normal")
-           self.labeld.delete(0, tk.END)
-           self.labeld.insert(0, result)
-           self.labeld.config(state = "readonly")
-        
-        def run(self):
-           self.window.mainloop()
+    # define function for reiteration
+    def reiterate_program(self):
+        self.num1_entry.delete(0, tk.END)
+        self.num2_entry.delete(0, tk.END)
+        messagebox.showinfo('Retry', 'Please input new values for arithmetic calculations')
+
+    # define function for motivation
+    def motivate_message(self):
+        messagebox.showinfo('?', 'You are worthy. I hope you know that :3\nKeep moving forward!')
+
+    # define function for program exit
+    def exit_program(self):
+        self.window.destroy()
+        messagebox.showinfo('Message', 'Thank you for using this program!')
+    
+    def run(self):
+        self.window.mainloop()

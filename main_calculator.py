@@ -6,5 +6,5 @@
 from calculator_ui import CalculatorUI
 
 if __name__ == "__main__":
-    calculator = CalculatorUI
+    calculator = CalculatorUI()
     calculator.run()

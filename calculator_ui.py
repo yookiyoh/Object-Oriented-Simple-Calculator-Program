@@ -104,7 +104,7 @@ class CalculatorUI:
         try:
             num1 = float(self.num1_entry.get())
             num2 = float(self.num2_entry.get())
-            result = CalculatorFunctions.multiplication(num1, num2)
+            result = AdvancedCalculatorFunctions.power(num1, num2)
             self.labeld.config(text = result)
         except ValueError:
             messagebox.showerror('Error detected', 'Error: Invalid input. Please enter a valid input')

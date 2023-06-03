@@ -28,3 +28,7 @@ class CalculatorFunctions:
         
 # Define a new class that inherits from the CalculatorFunctions class
 class AdvancedCalculatorFunctions:
+    # Execute Advanced Calculator Functions class methods
+    @staticmethod
+    def power(num1, num2):
+        return round(num1 ** num2, 2)

@@ -7,6 +7,9 @@
 # Import Calculator Functions
 from calculator_functions import CalculatorFunctions
 
+# Import Advanced Calculator Functions
+from calculator_functions import AdvancedCalculatorFunctions
+
 # Import necessary libraries or modules 
 import tkinter as tk   # import tkinter for GUI
 from tkinter import *

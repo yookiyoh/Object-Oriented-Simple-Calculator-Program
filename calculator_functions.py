@@ -25,3 +25,6 @@ class CalculatorFunctions:
             return round(num1 / num2, 2)
         else:
             raise ZeroDivisionError("Error: Cannot divide by zero")
+        
+# Define a new class that inherits from the CalculatorFunctions class
+class AdvancedCalculatorFunctions:
